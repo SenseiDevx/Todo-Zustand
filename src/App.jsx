@@ -6,7 +6,6 @@ import {TodoList} from './components/TodoList';
 import {TotalTodos} from './components/TotalTodos';
 
 function App() {
-
     return (
         <VStack spacing={4}>
             <Filter/>
