@@ -41,8 +41,6 @@ export const useTodos = create(devtools(persist((set, get) => ({
         }
     }
 }))))
-
-
 export const useFilter = create(set => ({
     filter: 'all',
     setFilter: (value) => set({filter: value})

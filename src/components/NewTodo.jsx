@@ -14,9 +14,9 @@ import {useRef} from 'react';
 import {useTodos} from '../store';
 
 const NewTodo = () => {
-    const {isOpen, onOpen, onClose} = useDisclosure();
-    const ref = useRef();
-    const addTodo = useTodos((state) => state.addTodo);
+    const {isOpen, onOpen, onClose} = useDisclosure()
+    const ref = useRef()
+    const addTodo = useTodos((state) => state.addTodo)
 
     const handleAddTodo = () => {
         addTodo(ref.current.value);
@@ -34,7 +34,6 @@ const NewTodo = () => {
                 <DrawerContent>
                     <DrawerCloseButton/>
                     <DrawerHeader>Create new todo</DrawerHeader>
-
                     <DrawerBody>
                         <Input
                             placeholder="Type here..."

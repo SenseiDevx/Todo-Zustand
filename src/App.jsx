@@ -15,7 +15,7 @@ function App() {
             <NewTodo/>
             <FetchTodos/>
         </VStack>
-    );
+    )
 }
 
 export default App;
